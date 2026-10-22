@@ -6,14 +6,14 @@ public class SiakadWhile16 {
         Scanner sc = new Scanner(System.in);
 
         int jumlahMahasiswa;
-        int i = 1;
+        int i = 0;
         double nilai;
 
         System.out.print("Masukkan jumlah mahasiswa: ");
         jumlahMahasiswa = sc.nextInt();
 
-        while (i <= jumlahMahasiswa) {
-            System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
+        while (i < jumlahMahasiswa) {
+            System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilai = sc.nextDouble();
 
             if (nilai < 0 || nilai > 100) {
@@ -23,6 +23,7 @@ public class SiakadWhile16 {
 
             if (nilai > 80) {
                 System.out.println("Nilai huruf: A");
+                System.out.println("Bagus, pertahankan nilainya");
             } else if (nilai > 73) {
                 System.out.println("Nilai huruf: B+");
             } else if (nilai > 65) {
